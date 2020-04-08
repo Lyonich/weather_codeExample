@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  WeatherTestProject
+
+  Created by Leonid Kibukevich on 01/04/2020.
+  Copyright © 2020 Leonid Kibukevich. All rights reserved.
+*/
+
+"settings" = "Settings";
+"select_language" = "Select Language";
+"language" = "Language";
+"units" = "Units";
+"metric" = "Metric";
+"imperial" = "Imperial";
+"visibility" = "Visibility: ";
+"wind" = "Wind: ";
+"sunrise" = "Sunrise: ";
+"sunset" = "Sunset: ";
+
+"monday" = "Monday";
+"tuesday" = "Tuesday";
+"wednesday" = "Wednesday";
+"thursday" = "Thursday";
+"friday" = "Friday";
+"saturday" = "Saturday";
+"sunday" = "Sunday";

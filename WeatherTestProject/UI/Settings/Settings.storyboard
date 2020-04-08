@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rmn-g0-U5A">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings View Controller-->
+        <scene sceneID="57q-Ou-FxJ">
+            <objects>
+                <viewController storyboardIdentifier="SettingsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rmn-g0-U5A" customClass="SettingsViewController" customModule="WeatherTestProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1dB-aT-4fe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="6U4-ZL-f0s">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UnitsCell" id="mFE-K3-RyN" customClass="UnitsCell" customModule="WeatherTestProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mFE-K3-RyN" id="o4U-Uy-o58">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rwj-Oh-1az">
+                                                    <rect key="frame" x="32" y="6.5" width="350" height="32"/>
+                                                    <segments>
+                                                        <segment title="Metric"/>
+                                                        <segment title="Imperial"/>
+                                                    </segments>
+                                                    <connections>
+                                                        <action selector="segmentControlAction:" destination="mFE-K3-RyN" eventType="valueChanged" id="S8j-Pw-1dn"/>
+                                                    </connections>
+                                                </segmentedControl>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="rwj-Oh-1az" firstAttribute="leading" secondItem="o4U-Uy-o58" secondAttribute="leading" constant="32" id="OCl-LR-0OK"/>
+                                                <constraint firstItem="rwj-Oh-1az" firstAttribute="centerX" secondItem="o4U-Uy-o58" secondAttribute="centerX" id="PzY-cX-52r"/>
+                                                <constraint firstAttribute="trailing" secondItem="rwj-Oh-1az" secondAttribute="trailing" constant="32" id="Rvl-I2-2ex"/>
+                                                <constraint firstItem="rwj-Oh-1az" firstAttribute="centerY" secondItem="o4U-Uy-o58" secondAttribute="centerY" id="aV7-9C-3jl"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="segmentControl" destination="rwj-Oh-1az" id="sfP-BT-Coj"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="UITableViewCell" textLabel="ghh-xa-ztS" style="IBUITableViewCellStyleDefault" id="hwJ-3D-nKv">
+                                        <rect key="frame" x="0.0" y="99" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hwJ-3D-nKv" id="cGA-Bc-EWR">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ghh-xa-ztS">
+                                                    <rect key="frame" x="20" y="0.0" width="355" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="rmn-g0-U5A" id="z5Y-p6-apj"/>
+                                    <outlet property="delegate" destination="rmn-g0-U5A" id="bEJ-WL-ujd"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6U4-ZL-f0s" firstAttribute="trailing" secondItem="Crt-hS-SSx" secondAttribute="trailing" id="1WA-KM-Mgg"/>
+                            <constraint firstItem="6U4-ZL-f0s" firstAttribute="top" secondItem="Crt-hS-SSx" secondAttribute="top" id="R3e-0Q-YpP"/>
+                            <constraint firstItem="6U4-ZL-f0s" firstAttribute="leading" secondItem="Crt-hS-SSx" secondAttribute="leading" id="iEM-2Z-fSQ"/>
+                            <constraint firstAttribute="bottom" secondItem="6U4-ZL-f0s" secondAttribute="bottom" id="kK2-aW-Jwh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Crt-hS-SSx"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="6U4-ZL-f0s" id="6mm-Fw-2AZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Mc-xr-bdA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="176.81159420289856" y="148.66071428571428"/>
+        </scene>
+    </scenes>
+</document>
