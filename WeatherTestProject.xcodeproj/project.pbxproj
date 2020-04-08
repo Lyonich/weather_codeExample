@@ -382,6 +382,7 @@
 				F3C87901243367040089C0A1 /* SceneDelegate.swift in Sources */,
 				F3336CD5243380DD00DBBAF0 /* Rain.swift in Sources */,
 				F3336CCF2433808A00DBBAF0 /* FiveDayResponse.swift in Sources */,
+				F37A7E03243E8D93007FBA04 /* WeatherCell.swift in Sources */,
 				F3336CCA2433677100DBBAF0 /* Constants.swift in Sources */,
 				F3A5A412243E8C0F004AAA21 /* WeatherCell.swift in Sources */,
 				F3336CE72433D1A900DBBAF0 /* Sys.swift in Sources */,

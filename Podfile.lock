@@ -1,0 +1,30 @@
+PODS:
+  - AFDateHelper (4.3.0)
+  - Alamofire (5.0.2)
+  - Kingfisher (5.13.2):
+    - Kingfisher/Core (= 5.13.2)
+  - Kingfisher/Core (5.13.2)
+  - Localize-Swift (2.0.0)
+
+DEPENDENCIES:
+  - AFDateHelper
+  - Alamofire
+  - Kingfisher
+  - Localize-Swift (~> 2.0)
+
+SPEC REPOS:
+  trunk:
+    - AFDateHelper
+    - Alamofire
+    - Kingfisher
+    - Localize-Swift
+
+SPEC CHECKSUMS:
+  AFDateHelper: b769c07d3d4784ee9a74633285304261bb27dc52
+  Alamofire: 3ba7a4db18b4f62c4a1c0e1cb39d7f3d52e10ada
+  Kingfisher: d342c8354c10c3d85a27d6d4c42c41285924b898
+  Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
+
+PODFILE CHECKSUM: ca02c30ccbdaf57b8f21848e962a29bc7eba8af5
+
+COCOAPODS: 1.8.4
