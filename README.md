@@ -1,5 +1,5 @@
-# weather_codeExample
-Application for displaying the weather forecast for the current location
+# weather_codeExample 
+Application for displaying the weather forecast for the current location from https://openweathermap.org
 
 <div align="center">
   <p> Screenshots / Скриншоты </p>
